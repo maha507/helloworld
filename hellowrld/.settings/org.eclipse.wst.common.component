@@ -1,12 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="hellowrld">
+            
+    
+    <wb-module deploy-name="helloworld">
+                        
+        
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+                        
+        
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+                        
+        
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+                        
+        
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+                        
+        
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+                        
+        
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources"/>
-        <property name="context-root" value="hellowrld"/>
-        <property name="java-output-path" value="/hellowrld/target/classes"/>
+                
+        <dependent-module archiveName="springboot_demo-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/springboot_demo/springboot_demo">
+                        
+            <dependency-type>uses</dependency-type>
+                    
+        </dependent-module>
+                
+        <dependent-module archiveName="springboot_helloworld-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/springboot_helloworld/springboot_helloworld">
+                        
+            <dependency-type>uses</dependency-type>
+                    
+        </dependent-module>
+                        
+        
+        <property name="java-output-path" value="/helloworld/target/classes"/>
+        <property name="context-root" value="helloworld"/>
+                    
+    
     </wb-module>
+        
+
 </project-modules>
